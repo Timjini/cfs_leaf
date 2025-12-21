@@ -5,7 +5,7 @@ namespace MyApp\Controller;
 use MyApp\Controller\Controller;
 
 
-final class TestController extends Controller
+final class HomeController extends Controller
 {
     public function index()
     {
@@ -30,5 +30,9 @@ final class TestController extends Controller
             ],
         ];
         echo $this->twig->render('index.html.twig', ['products' => $products]);
+    }
+
+    public function notFound(){
+        echo $this->twig->render('not-found.html.twig');
     }
 }

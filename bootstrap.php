@@ -4,7 +4,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 require_once __DIR__ . '/src/Controller/Controller.php';
-require_once __DIR__ . '/src/Controller/TestController.php';
+require_once __DIR__ . '/src/Controller/HomeController.php';
 
 // Specify our Twig templates location
 $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/templates');
